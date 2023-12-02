@@ -1,0 +1,38 @@
+
+<div class="body">
+  <h1>Cadastrar novo doce</h1>
+  <form class="create-form" (ngSubmit)="criarNovoDoce()">
+    <div class="input">
+      <label for="categoria" class="input-text">Categoria:</label>
+      <input type="text" class="text-input" name="categoria" placeholder="" [(ngModel)]="categoria">
+    </div>
+
+    <div class="input">
+      <label for="descricao" class="input-text">Descrição:</label>
+      <input type="text" class="text-input" name="descricao" placeholder="" [(ngModel)]="descricao">
+    </div>
+
+    <div class="input">
+      <label for="genero" class="input-text">Genero:</label>
+      <div>
+        <select name="genero" class="text-input" [(ngModel)]="genero">
+          <option value="feminino">feminino</option>
+          <option value="masculino">masculino</option>
+          <option value="unissex">unissex</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="input">
+      <label for="imagem" class="input-text">Valor:</label>
+      <input type="file" class="text-input" name="imagem" (change)="onFileSelect($event)">
+    </div>
+
+    <div class="input">
+      <label for="valor" class="input-text">Valor:</label>
+      <input type="text" class="text-input" name="valor_atual" [(ngModel)]="valor_atual">
+    </div>
+
+    <button type="submit" class="submit-button">Criar</button>
+  </form>
+</div>
