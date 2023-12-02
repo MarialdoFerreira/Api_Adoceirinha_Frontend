@@ -1,6 +1,7 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { ItemsService } from 'src/app/services/items.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-item-form',
@@ -15,7 +16,7 @@ export class NewItemFormComponent {
   valor_atual: string = ''
   imagem: File | null = null;
 
-  constructor(private _itemsService: ItemsService) {
+  constructor(private _itemsService: ItemsService, private router: Router) {
 
   }
 
@@ -40,6 +41,7 @@ export class NewItemFormComponent {
       (response: any) => {
         if(response.id) {
           alert('criado com sucesso')
+          this.router.navigate(['/']);
         }
       },
       (erro: HttpErrorResponse) => {
