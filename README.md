@@ -4,6 +4,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+Para rodar o projeto instale e configure o node 
+disponível no [link](https://nodejs.org/en)
+
+Após isso, no diretório do projeto, execute:
+Run `npm i`
+Este comando irá instalar as dependencias do projeto
+
+E posteriormente, para iniciar o servidor:
+Run `npm start`
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
