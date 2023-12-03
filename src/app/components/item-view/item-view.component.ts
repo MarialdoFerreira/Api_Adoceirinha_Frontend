@@ -24,7 +24,6 @@ export class ItemViewComponent implements OnInit{
     this.itemsService.getCandyInfo(this.id).subscribe(
       (response: any) => {
         this.candyInfo = response
-        console.log(this.candyInfo)
       }
     )
   }

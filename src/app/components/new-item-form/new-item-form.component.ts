@@ -35,8 +35,6 @@ export class NewItemFormComponent {
       formData.append('imagem', this.imagem)
     }
 
-    console.log(formData)
-
     this._itemsService.createNewCandy(formData).subscribe(
       (response: any) => {
         if(response.id) {
