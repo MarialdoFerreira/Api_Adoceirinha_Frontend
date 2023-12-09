@@ -1,5 +1,5 @@
 .body {
-  background-color: #91c68d;
+  background-color: #937071;
   padding-left: 20vw;
   padding-right: 20vw;
   color: white;
@@ -7,7 +7,7 @@
 
 .card {
   color: black;
-  border-radius: 15px;
+  border-radius: 20px;
   width: 50vw;
   margin-top: 1vh;
   background-color: white;
@@ -21,12 +21,12 @@
 .img {
   width: 25vw;
   height: 25vw;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .delete-button {
-  background-color: #796c86;
-  border: #796c86;
+  background-color: #837778;
+  border: #461616;
   border-radius: 5px;
   padding: 10px;
   color: white;
@@ -42,7 +42,7 @@
 }
 
 .genero {
-  color: #A2B455;
+  color: #837778;
   font-size: 24px;
   font-weight: 600;
 }
@@ -65,9 +65,9 @@
 }
 
 .submit-button {
-  background-color: #A2B455;
-  border: #A2B455;
-  border-radius: 5px;
+  background-color: #837778;
+  border: #461616;
+  border-radius: 10px;
   padding: 10px;
   color: white;
   align-self: flex-end;
@@ -117,7 +117,7 @@
 
 .value {
   align-self: flex-end;
-  color: #91c68d;
+  color: #837778;
   font-size: 32px;
   font-weight: 600;
 }

@@ -23,9 +23,9 @@
             <label for="avaliacao" class="avaliacao-label">Escreva uma avaliação:</label>
             <textarea type="textarea" class="text-input" name="avaliacao" [(ngModel)]="avaliacao"></textarea>
           </div>
-          <button type="submit" class="submit-button">Criar</button>
-          <button class="delete-button" (click)="deleteCandy(candyInfo?.descricao)">
-            excluir doce</button>
+          <button type="submit" class="submit-button">Inserir Avaliação</button>
+          <button type="button" class="delete-button" (click)="deleteCandy(candyInfo?.descricao)">
+            Excluir doce</button>
         </form>
       </div>
 

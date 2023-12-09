@@ -5,7 +5,7 @@ export interface candy {
   categoria: string
   descricao: string
   genero: string
-  id: number
+  id: string
   imagem: string
   valor_atual: number
 }
@@ -37,7 +37,7 @@ export class ItemsService {
   constructor(private http: HttpClient ) { }
 
   getAllCandy() {
-    return this.http.get<candy[]>('http://127.0.0.1:5000/doces')
+    return this.http.get<any>('http://127.0.0.1:5000/doces')
   }
 
   createNewCandy(formData: any) {

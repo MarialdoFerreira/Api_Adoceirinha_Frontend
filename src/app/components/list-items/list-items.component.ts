@@ -20,6 +20,7 @@ export class ListItemsComponent implements OnInit {
     this.itemsService.getAllCandy().subscribe(
       (response: any) => {
         this.candyList = response.doces
+        console.log(this.candyList)
       }
     )
   }
